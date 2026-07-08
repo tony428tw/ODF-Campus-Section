@@ -1,6 +1,6 @@
 # ODF 開放文件格式｜介紹與應用
 
-![ODF 開放文件格式介紹與應用](./ODF_COVER.png)
+![ODF 開放文件格式介紹與應用](./images/ODF_COVER.png)
 
 一個以校園推廣為主題的 ODF（Open Document Format）介紹網站，協助學生、教師與行政人員快速了解開放文件格式、免費編輯工具及政府文件格式政策。
 
@@ -14,6 +14,37 @@
 - 公文附件轉檔步驟、操作手冊與常見問題
 - ODF 校園推廣影片與完整教材
 
+## 預覽網站
+
+這是純靜態網站，不需安裝套件或建置工具。
+
+```bash
+python -m http.server 4173
+```
+
+啟動後開啟 `http://127.0.0.1:4173/`，也可以直接開啟 `index.html` 瀏覽。
+
+## 專案結構
+
+```text
+.
+├── index.html          # 網站內容與語意結構
+├── styles.css          # 視覺設計與響應式版面
+├── script.js           # 行動選單及頁籤互動
+├── images/             # Logo、網站圖片與 README 封面
+├── ODF介紹與應用.pdf   # 完整推廣教材
+└── 朝陽校園照片/       # 網站使用的校園影像
+```
+
+## 設計與功能
+
+- 響應式單頁網站，支援桌機、平板與手機
+- 鍵盤可操作的導覽與校園情境頁籤
+- `focus-visible` 焦點樣式與跳至主要內容連結
+- 支援 `prefers-reduced-motion`
+- 可水平捲動的手機版軟體下載表格
+- YouTube 隱私強化模式嵌入影片
+- 無框架、無第三方前端相依套件
 
 ## 重要資源
 
@@ -22,6 +53,22 @@
 - [LibreOffice 正體中文網站](https://zh-tw.libreoffice.org/)
 - [Apache OpenOffice 正體中文網站](https://www.openoffice.org/zh-tw/)
 - [ODF 介紹與應用影片](https://youtu.be/aUBvtWaOY3w)
+- [ODF 校園推廣概念曲 Format 自由式](https://youtu.be/L7HEixrLuHM)
+- [投影母片設定](https://youtu.be/m41bWVjQwC0?si=5BJXiJsqUCIkZGj3)
+- [Impress 動畫設定](https://youtu.be/QPNxfteQYjg?si=oIT2ExOip333Ghbf)
+- [Calc 資料庫應用](https://youtu.be/q5N8z6hHF6Q?si=S7ClkJ-QQ2x-ipfd)
+- [朝陽科大論文格式小幫手](https://github.com/tony428tw/CYUT-Thesis-ODF-Formatting-Extension)
+
+## 朝陽科大論文格式小幫手
+
+這是一套可安裝於 LibreOffice Writer 或 MODA ODF 文件應用工具的 `.oxt` 擴充套件，可快速建立並套用朝陽科技大學博碩士論文常用格式。
+
+- 一鍵設定頁面、字型、邊界與頁碼
+- 建立論文常用章節及圖表標題樣式
+- 插入封面、書名頁、目錄與章節骨架
+- 套用 APA 7 參考文獻段落格式
+
+[前往 GitHub 查看安裝方式與下載套件 →](https://github.com/tony428tw/CYUT-Thesis-ODF-Formatting-Extension)
 
 ## ODF 是什麼？
 
