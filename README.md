@@ -15,7 +15,7 @@
 - ODF 校園推廣影片與完整教材
 
 ## 預覽網站
-- [網站預覽連結](https://www-api.moda.gov.tw/File/Get/moda/zh-tw/mi8j83yBxg7gRfF)
+- [網站預覽連結](https://tony428tw.github.io/ODF-Campus-Section/)
 
 ## 設計與功能
 
